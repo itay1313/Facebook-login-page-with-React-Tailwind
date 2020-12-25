@@ -1,0 +1,80 @@
+:root {
+  --f-size-l: calc(18px + 2vmin);
+  --f-size-m: calc(6px + 2vmin);
+  --f-size-s: calc(4px + 2vmin);
+  --f-size-xs: calc(1px + 2vmin);
+  --f-color: #1877f2;
+  --f-color-dark: #1c1e21;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+h1 {
+  font-size: var(--f-size-l);
+  color: #1c1e21;
+  line-height: 1;
+  font-weight: normal;
+}
+.width {
+  margin: 0 auto;
+  width: 980px;
+}
+@media (max-width: 980px) {
+  .width {
+    width: 100%;
+  }
+}
+.form {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+input {
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  width: 100%;
+  font-size: var(--f-size-m);
+  vertical-align: middle;
+  outline: none;
+}
+input:focus {
+  border-color: var(--f-color);
+  box-shadow: 0 0 0 2px #e7f3ff;
+  caret-color: var(--f-color);
+}
+button {
+  padding: 14px 16px;
+}
+li {
+  font-size: var(--f-size-xs);
+  color: #737373;
+  margin-left: 20px;
+}
+h6 {
+  font-size: var(--f-size-s);
+  color: #737373;
+}
+.br {
+  align-items: center;
+  border-bottom: 1px solid #dadde1;
+  display: flex;
+  margin: 20px 0;
+  text-align: center;
+}
+a {
+  color: var(--f-color);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
