@@ -57,7 +57,7 @@ li {
 }
 h6 {
   font-size: var(--f-size-s);
-  color: #737373;
+  color: var(--f-color-dark);
 }
 .br {
   align-items: center;
